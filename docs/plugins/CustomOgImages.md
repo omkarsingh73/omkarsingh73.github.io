@@ -282,7 +282,8 @@ export const og: SocialImageOptions["Component"] = (
         alignItems: "flex-start",
         height: "100%",
         width: "100%",
-        backgroundImage: `url("https://${cfg.baseUrl}/static/og-image.jpeg")`,
+        /* Use a placeholder or example URL for Markdown, not a JS template literal */
+        backgroundImage: "url('https://example.com/static/og-image.jpeg')",
         backgroundSize: "100% 100%",
       }}
     >
