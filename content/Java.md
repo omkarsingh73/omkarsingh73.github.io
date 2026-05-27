@@ -1,12 +1,16 @@
-# ☕ Java Basics — Revision Notes
 
-> Senior engineer quick-reference · small examples for every concept
 
-  
+> 1. [[Java 1-7 features]]
+> 2. [[Java 8 features]]
+> 3. [[Java 9-11 features]]
+> 4. [[Java 12-17 features]]
+> 5. [[Java 18-21 features]]
+> 6. [[Java LTS]]
 
 ---
 
   
+# ☕ Java Basics — Revision Notes
 
 ## Table of Contents
 
@@ -28,6 +32,7 @@
 
 9. [Modern Java (11–21)](#9-modern-java-1121)
 
+10. [JVM, JRE, JDK]
   
 
 ---
@@ -217,42 +222,6 @@ String.format("%s v%d", "Java", 21); // "Java v21"
 ### Class Anatomy `[core]`
 
 Fields, constructors, methods, static members, initializer blocks. Instance initializer runs before constructor body.
-
-  
-
-```java
-
-public class Account {
-
-private static int count = 0; // class-level
-
-private final int id;
-
-private double balance;
-
-  
-
-// instance initializer block
-
-{ count++; }
-
-  
-
-public Account(double balance) {
-
-this.id = count;
-
-this.balance = balance;
-
-}
-
-  
-
-public static int getCount() { return count; }
-
-}
-
-```
 
   
 
@@ -1014,34 +983,214 @@ var x = process(); // What type is this? Avoid.
 
   
 
-| Topic | Key Rule |
-
+|Topic|Key Rule|
 |---|---|
-
-| `==` vs `equals()` | Always use `equals()` for objects |
-
-| Integer cache | `-128..127` cached; `==` unreliable outside this range |
-
-| PECS | Producer `extends`, Consumer `super` |
-
-| Stream pipeline | Lazy — nothing runs until terminal op |
-
-| `equals` + `hashCode` | Must both be overridden together |
-
-| `StringBuilder` | Use in loops; `StringBuffer` only if thread-safe needed |
-
-| Checked exception | Must `catch` or `throws`; unchecked is optional |
-
-| `record` | Immutable DTO — replaces boilerplate POJOs |
-
-| `var` | Only when type is obvious from right-hand side |
-
-| `Optional.get()` | Never call without `isPresent()` — use `orElse` instead |
+|`==` vs `equals()`|Always use `equals()` for object value comparison|
+|Integer Cache|`-128 to 127` values are cached; `==` becomes unreliable outside this range|
+|PECS|Producer = `extends`, Consumer = `super`|
+|Stream Pipeline|Streams are lazy; execution starts only after terminal operation|
+|`equals()` + `hashCode()`|Always override both together|
+|`StringBuilder`|Prefer in loops; use `StringBuffer` only for thread safety|
+|Checked Exception|Must be handled using `catch` or `throws`|
+|`record`|Immutable DTO replacement for boilerplate POJOs|
+|`var`|Use only when RHS clearly indicates type|
+|`Optional.get()`|Avoid direct `get()`; prefer `orElse()`, `orElseThrow()`, or `ifPresent()`|
 
   
 
 ---
+# 10 JVM vs JRE vs JDK
 
+|Component|Full Form|Purpose|Contains|
+|---|---|---|---|
+|JVM|Java Virtual Machine|Executes Java bytecode|Class Loader, Memory Area, GC, JIT Compiler|
+|JRE|Java Runtime Environment|Runs Java applications|JVM + Core Libraries|
+|JDK|Java Development Kit|Develops Java applications|JRE + Compiler + Debugging Tools|
+
+---
+
+# Relationship
+
+```text
+JDK = JRE + Development Tools
+JRE = JVM + Libraries
+```
+
+---
+
+# Java Execution Flow
+
+```text
+.java --> javac --> .class(Bytecode) --> JVM --> Machine Code
+```
+
+---
+
+# JVM (Java Virtual Machine)
+
+## Responsibilities
+
+- Loads class files
+    
+- Verifies bytecode
+    
+- Executes bytecode
+    
+- Memory management
+    
+- Garbage collection
+    
+- Platform dependent
+    
+
+---
+
+## Important Components of JVM
+
+|Component|Purpose|
+|---|---|
+|Class Loader|Loads `.class` files|
+|Method Area|Stores class metadata|
+|Heap|Stores objects|
+|Stack|Stores method calls/local variables|
+|PC Register|Stores current instruction|
+|Execution Engine|Executes bytecode|
+|Garbage Collector|Cleans unused objects|
+
+---
+
+## JVM Example
+
+```java
+public class Test {
+
+    public static void main(String[] args) {
+        System.out.println("Hello JVM");
+    }
+}
+```
+
+### Flow
+
+```text
+Test.java --> javac --> Test.class --> JVM executes
+```
+
+---
+
+# JRE (Java Runtime Environment)
+
+## Purpose
+
+Used only for running Java applications.
+
+### Contains
+
+- JVM
+    
+- Core Java libraries
+    
+- Supporting files
+    
+
+---
+
+## Important Point
+
+```text
+JRE does NOT contain compiler (javac)
+```
+
+You cannot develop Java applications using only JRE.
+
+---
+
+# JDK (Java Development Kit)
+
+## Purpose
+
+Used for developing Java applications.
+
+### Contains
+
+- JRE
+    
+- JVM
+    
+- Compiler (`javac`)
+    
+- Debugger
+    
+- Development tools
+    
+
+---
+
+## Important Tools in JDK
+
+|Tool|Purpose|
+|---|---|
+|`javac`|Compiles Java code|
+|`java`|Runs Java program|
+|`javadoc`|Generates documentation|
+|`jdb`|Debugger|
+|`jar`|Creates JAR files|
+
+---
+
+# Real-World Analogy
+
+|Component|Analogy|
+|---|---|
+|JVM|Engine|
+|JRE|Engine + Fuel|
+|JDK|Complete Car Factory|
+
+---
+
+# Interview Difference Table
+
+|Feature|JVM|JRE|JDK|
+|---|---|---|---|
+|Runs Java Program|Yes|Yes|Yes|
+|Compiles Java Code|No|No|Yes|
+|Contains JVM|No|Yes|Yes|
+|Development Tools|No|No|Yes|
+|Used By|Runtime Engine|End Users|Developers|
+
+---
+
+# Important Interview Questions
+
+## Why is Java Platform Independent?
+
+```text
+Java code compiles into bytecode.
+JVM converts bytecode into machine code specific to OS.
+```
+
+---
+
+## Is JVM Platform Independent?
+
+```text
+No.
+JVM is platform dependent.
+Different OS has different JVM implementation.
+```
+
+---
+
+# Quick Revision Notes
+
+|Topic|Key Point|
+|---|---|
+|JVM|Executes bytecode|
+|JRE|Used to run Java apps|
+|JDK|Used to develop Java apps|
+|javac|Present only in JDK|
+|Bytecode|Platform independent|
+|JVM|Platform dependent|
   
 
 *Next topics: Spring Boot · Spring Batch · Concurrency · JVM Internals · Design Patterns*
