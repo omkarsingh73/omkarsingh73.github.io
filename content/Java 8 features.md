@@ -5,29 +5,6 @@
 
 ## Table of Contents
 
-1. [Lambda Expressions](#1-lambda-expressions)
-
-2. [Functional Interfaces](#2-functional-interfaces)
-
-3. [Method References](#3-method-references)
-
-4. [Stream API](#4-stream-api)
-
-5. [Optional](#5-optional)
-
-6. [Default & Static Methods in Interfaces](#6-default--static-methods-in-interfaces)
-
-7. [New Date & Time API (java.time)](#7-new-date--time-api-javatime)
-
-8. [Collectors](#8-collectors)
-
-9. [Map Enhancements](#9-map-enhancements)
-
-10. [Nashorn JavaScript Engine](#10-nashorn-javascript-engine)
-
-11. [Base64 Encoding/Decoding](#11-base64-encodingdecoding)
-
-12. [Quick Reference Cheat Sheet](#12-quick-reference-cheat-sheet)
 
   
 
