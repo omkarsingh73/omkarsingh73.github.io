@@ -1,3 +1,3 @@
-[[Java]]
-[[Scrum]]
+1. [[Java]]
+2. [[Scrum]]
 

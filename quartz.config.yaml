@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: omkarsingh73.github.io/quartz
+  baseUrl: omkarsingh73.github.io
   ignorePatterns:
     - private
     - templates
