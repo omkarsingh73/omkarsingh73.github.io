@@ -1,10 +1,50 @@
 
----
-# Table of Contents
+## Table of Contents
+
+- [[#1. Collection Hierarchy|1. Collection Hierarchy]]
+- [[#2. List|2. List]]
+	- [[#2. List#ArrayList|ArrayList]]
+	- [[#2. List#LinkedList|LinkedList]]
+- [[#3. Set|3. Set]]
+	- [[#3. Set#HashSet|HashSet]]
+	- [[#3. Set#LinkedHashSet|LinkedHashSet]]
+	- [[#3. Set#TreeSet|TreeSet]]
+- [[#4. Queue & Deque|4. Queue & Deque]]
+	- [[#4. Queue & Deque#PriorityQueue|PriorityQueue]]
+	- [[#4. Queue & Deque#ArrayDeque|ArrayDeque]]
+	- [[#4. Queue & Deque#Stack|Stack]]
+- [[#5. Map|5. Map]]
+	- [[#5. Map#HashMap|HashMap]]
+	- [[#5. Map#LinkedHashMap|LinkedHashMap]]
+	- [[#5. Map#TreeMap|TreeMap]]
+- [[#6. Comparable vs Comparator|6. Comparable vs Comparator]]
+	- [[#6. Comparable vs Comparator#Comparable `[core]`|Comparable `[core]`]]
+	- [[#6. Comparable vs Comparator#Comparator `[core]`|Comparator `[core]`]]
+- [[#7. Fail-Fast vs Fail-Safe|7. Fail-Fast vs Fail-Safe]]
+	- [[#7. Fail-Fast vs Fail-Safe#Fail-Fast `[⚠ trap]`|Fail-Fast `[⚠ trap]`]]
+	- [[#7. Fail-Fast vs Fail-Safe#Fail-Safe `[core]`|Fail-Safe `[core]`]]
+- [[#8. Thread-Safe Collections|8. Thread-Safe Collections]]
+	- [[#8. Thread-Safe Collections#ConcurrentHashMap `[core]`|ConcurrentHashMap `[core]`]]
+	- [[#8. Thread-Safe Collections#CopyOnWriteArrayList `[tip]`|CopyOnWriteArrayList `[tip]`]]
+	- [[#8. Thread-Safe Collections#Other Thread-Safe Options|Other Thread-Safe Options]]
+- [[#9. Immutable Collections|9. Immutable Collections]]
+- [[#10. Java 8 — Streams with Collections|10. Java 8 — Streams with Collections]]
+- [[#11. Time Complexity Master Table|11. Time Complexity Master Table]]
+	- [[#11. Time Complexity Master Table#List|List]]
+	- [[#11. Time Complexity Master Table#Set|Set]]
+	- [[#11. Time Complexity Master Table#Map|Map]]
+	- [[#11. Time Complexity Master Table#Queue|Queue]]
+- [[#12. Common Interview Questions|12. Common Interview Questions]]
+- [[#13. Quick Cheat Sheet|13. Quick Cheat Sheet]]
+	- [[#13. Quick Cheat Sheet#When to Use Which Collection?|When to Use Which Collection?]]
+	- [[#13. Quick Cheat Sheet#Key Null Handling|Key Null Handling]]
+	- [[#13. Quick Cheat Sheet#Memory Tricks|Memory Tricks]]
+
+
 
 ---
 
-## 1. Collection Hierarchy
+##  1. Collection Hierarchy
 
 ```
 java.lang.Iterable

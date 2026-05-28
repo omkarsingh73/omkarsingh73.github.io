@@ -1,7 +1,3 @@
-# Spring Boot Advanced Revision Notes
-
----
-
 # Table of Contents
 
 - [[#1. Spring Boot Architecture|1. Spring Boot Architecture]]
@@ -26,6 +22,7 @@
 - [[#20. Design Patterns in Spring|20. Design Patterns in Spring]]
 - [[#21. Spring Boot Interview Questions|21. Spring Boot Interview Questions]]
 - [[#22. Spring Boot Cheatsheet|22. Spring Boot Cheatsheet]]
+
 
 
 ---

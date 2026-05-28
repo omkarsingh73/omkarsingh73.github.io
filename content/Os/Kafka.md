@@ -1,7 +1,3 @@
-# Apache Kafka Advanced Revision Notes
-
----
-
 # Table of Contents
 
 - [[#1. Kafka Architecture Overview|1. Kafka Architecture Overview]]
@@ -29,6 +25,7 @@
 - [[#23. Kafka Interview Questions|23. Kafka Interview Questions]]
 - [[#24. Kafka Cheatsheet|24. Kafka Cheatsheet]]
 - [[#25. Real-World Architecture Scenarios|25. Real-World Architecture Scenarios]]
+
 
 
 ---

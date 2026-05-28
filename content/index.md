@@ -1,3 +1,2 @@
-1. [[Java]]
-2. [[Scrum]]
-
+[[Java]]
+[[Spring-boot]]
