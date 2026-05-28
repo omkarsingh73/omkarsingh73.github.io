@@ -1,19 +1,3 @@
-# Java Features Timeline (Java 1.0 to Java 8)
-
-|Java Version|Important Features|
-|---|---|
-|Java 1.0 (1996)|JVM, Applets, AWT, Multithreading, Garbage Collection|
-|Java 1.1|Inner Classes, JavaBeans, JDBC, RMI, Reflection|
-|Java 1.2|Collections Framework, Swing, JIT Compiler|
-|Java 1.3|HotSpot JVM, JavaSound, JNDI|
-|Java 1.4|Assertions, NIO, Regex API, Exception Chaining, Logging API|
-|Java 5 (1.5)|Generics, Annotations, Enum, Autoboxing/Unboxing, Enhanced for-loop, Varargs, Concurrency API|
-|Java 6|Compiler API, JDBC 4.0, Scripting Engine, Performance Improvements|
-|Java 7|Try-with-resources, Diamond Operator, Multi-catch, NIO.2, ForkJoin Framework, String in switch|
-|Java 8|Lambda Expressions, Stream API, Functional Interfaces, Optional, Default Methods, Method References, Date-Time API|
-
----
-
 # Most Important Features Till Java 8
 
 |Feature|Introduced In|Description|
@@ -73,10 +57,18 @@
 
 ---
 
-# Frequently Asked Interview Features
+# Java Features Timeline (Java 1.0 to Java 8)
 
-|Java Version|Most Asked Feature|
+|Java Version|Important Features|
 |---|---|
-|Java 5|Generics|
-|Java 7|Try-with-resources|
-|Java 8|Lambda + Stream API|
+|Java 1.0 (1996)|JVM, Applets, AWT, Multithreading, Garbage Collection|
+|Java 1.1|Inner Classes, JavaBeans, JDBC, RMI, Reflection|
+|Java 1.2|Collections Framework, Swing, JIT Compiler|
+|Java 1.3|HotSpot JVM, JavaSound, JNDI|
+|Java 1.4|Assertions, NIO, Regex API, Exception Chaining, Logging API|
+|Java 5 (1.5)|Generics, Annotations, Enum, Autoboxing/Unboxing, Enhanced for-loop, Varargs, Concurrency API|
+|Java 6|Compiler API, JDBC 4.0, Scripting Engine, Performance Improvements|
+|Java 7|Try-with-resources, Diamond Operator, Multi-catch, NIO.2, ForkJoin Framework, String in switch|
+|Java 8|Lambda Expressions, Stream API, Functional Interfaces, Optional, Default Methods, Method References, Date-Time API|
+
+---
