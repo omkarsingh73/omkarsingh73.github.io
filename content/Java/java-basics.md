@@ -1,10 +1,10 @@
 
-> 1. [[Java 1-7 features]]
-> 2. [[Java 8 features]]
-> 3. [[Java 9-11 features]]
-> 4. [[Java 12-17 features]]
-> 5. [[Java 18-21 features]]
-> 6. [[Java LTS]]
+> 1. [[java-1-7-features]]
+> 2. [[java-8-features]]
+> 3. [[java-9-11-features]]
+> 4. [[java-12-17-features]]
+> 5. [[java-18-21-features]]
+> 6. [[java-lts]]
 
 
 ---
@@ -86,7 +86,7 @@ Once a `String` object is created, its value cannot be modified.
 
 `concat()` creates a new object instead of modifying the original one.
 
-Strings are immutable — every operation creates a new object. Literals go to the String Pool (PermGen/Metaspace [[Memory-management]]); `new String()` bypasses it.
+Strings are immutable — every operation creates a new object. Literals go to the String Pool (PermGen/Metaspace [[memory-management]]); `new String()` bypasses it.
 
 ```java
 String a = "hello"; // pool
@@ -211,7 +211,7 @@ String.format("%s v%d", "Java", 21); // "Java v21"
 ---
 ## 4. Collections Framework
 
-[[Collections]]
+[[collections]]
 ### Comparable vs Comparator `[core]`
 
 - `Comparable`: natural order, implemented on the class (`compareTo`).

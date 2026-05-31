@@ -1,5 +1,3 @@
-
-
 # Your Final Stack
 
 | Purpose                | Tool                                                       |

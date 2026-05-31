@@ -397,7 +397,7 @@ View renders → HTTP Response
 | Can abort request | Yes (`chain.doFilter` not called) | Yes (`preHandle` returns false) |
 | Use cases | Auth, CORS, logging, compression | Logging, auth (Spring-aware), locale |
 
-```java
+``` java
 // Interceptor registration
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
