@@ -192,9 +192,10 @@ plugins:
   - source: github:quartz-community/footer
     enabled: true
     options:
+      text: Created by Omkar Singh © 2026
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        LinkedIn: https://www.linkedin.com/in/omkarsingh73/
+        Portfolio: https://omkarsingh.netlify.app/
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
