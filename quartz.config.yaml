@@ -212,7 +212,8 @@ plugins:
       text: Created by Omkar Singh © 2026
       links:
         LinkedIn: https://www.linkedin.com/in/omkarsingh73/
-        Portfolio: https://omkarsingh.netlify.app/
+        Omkar Singh: 
+        # Portfolio: https://omkarsingh.netlify.app/
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
